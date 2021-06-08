@@ -1,0 +1,98 @@
+@import "./variables";
+
+
+.register {
+    margin: 60px auto;
+    width: 400px;
+    
+    @media (max-width: 500px) {
+        width: 260px;
+    }
+
+    .registerHead {
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    
+    .registerDesc {
+        color: #b3b2b2;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    button {
+      color: #4a4a4a;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 20px 50px;
+      background: none;
+      border: 1px solid #eaeaea;
+      cursor: pointer;
+      margin-top: 20px;
+  
+      &:hover {
+          background-color: $mainColor;
+          color: white;
+      }
+  }
+}
+
+
+#reg1,
+#reg2 {
+    display: none;
+}
+
+label[for="reg1"],
+label[for="reg2"] {
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    background: url(../assets/images/regEmpty.png) no-repeat left center;
+}
+
+#reg1:checked + label,
+#reg2:checked + label {
+    background: url(../assets/images/regChecked.png) no-repeat left center;
+}
+
+
+.registerPoint {
+    background: url(../assets/images/arrows.png) no-repeat left center;
+    padding-left: 12px;
+    color: #b3b2b2;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+
+.registerForm label,
+.rgisterForm input {
+    display: block;
+}
+
+
+.registerForm label {
+    color: #222222;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 700;
+
+}
+
+.registerForm input {
+    border: 1px solid #eaeaea;
+    padding: 14px;
+    //outline: 1px solid gray;
+    margin-bottom: 20px;
+    width: 100%;   
+
+    @media (max-width: 500px) {
+        width: 260px;
+    }
+}

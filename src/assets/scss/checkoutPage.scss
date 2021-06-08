@@ -1,0 +1,56 @@
+@import "./variables";
+
+
+.checkOutWrap {
+    margin: 90px auto;
+}
+
+.checkOutDetails {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e8e8e8;
+ 
+
+    &:not(:first-child) {
+        margin-top: 30px;
+    }
+
+    summary {
+        position: relative;
+        outline: none;
+        left: 1px;
+    }
+
+    .checkOutHeader {
+        color: #222222;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: absolute;
+        left: -1px;
+        top: 0;
+        background: white;
+
+        &:hover {
+            color: #f16d7f;
+            cursor: pointer;
+        }
+        
+    }
+}
+
+
+
+
+.checkOutData {
+    margin-top: 40px;
+
+    .shippingDetailsWrap {
+        padding: 0 35px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 670px) {
+            flex-direction: column;
+        }
+    }
+}

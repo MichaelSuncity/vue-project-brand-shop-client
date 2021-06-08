@@ -1,0 +1,42 @@
+@import "./variables";
+
+
+.topNav {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 740px) {
+      height: auto;
+      padding: 15px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+  }
+
+  @media (max-width: 425px) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+  }
+
+  a {
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #222222;
+
+      &:hover {
+          color: $mainColor;
+          text-decoration: none;
+      }
+  }
+
+  a:not(:last-child) {
+      margin-right: 45px;
+
+      @media (max-width: 425px) {
+          margin-right: 0;
+      }
+  }
+}

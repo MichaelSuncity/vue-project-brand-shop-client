@@ -1,0 +1,90 @@
+@import "./variables";
+
+
+.login {
+    margin: 60px auto;
+    width: 400px;
+
+    @media (max-width: 500px) {
+        width: 260px;
+    } 
+
+    .loginHead {
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    
+    .loginDesc {
+        color: #b3b2b2;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+.loginForm label,
+.loginForm input {
+    display: block;
+}
+
+
+.loginForm label {
+    color: #222222;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 700;
+
+    span {
+        color: #ff0d0d;
+        font-size: 17px;
+    }
+}
+
+.loginForm input {
+    border: 1px solid #eaeaea;
+    padding: 14px;
+    //outline: 1px solid gray;
+    margin-bottom: 20px;
+    width: 100%;   
+
+    @media (max-width: 500px) {
+      width: 260px;
+    }
+}
+
+
+.loginForm button {
+    border: 1px solid #eaeaea;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: none;
+    padding: 20px 50px;
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+        background-color: $mainColor;
+    }
+}
+
+.shippingFormForgot {
+    margin-left: 30px;
+    color: #222222;
+    font-size: 14px;
+    line-height: 20px;
+
+    @media (max-width: 500px) {
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+    }   
+}
+
+
